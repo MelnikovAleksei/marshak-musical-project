@@ -4,4 +4,5 @@
   min-width: 300px;
   margin: 0 auto;
   position: relative;
+  background-image: url(../../images/background/background.png);
 }
