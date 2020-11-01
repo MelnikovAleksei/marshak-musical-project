@@ -10,19 +10,25 @@ function Header(props) {
         rel="noopener"
       >
         <img
-          className="header__logo-image"
+          className="header__logo-marshak"
           alt={props.config.marshakAltLogoText}
           src={props.marshakLogo}
         />
       </a>
-      <img
-        className="header__logo"
-        alt={props.config.turbinaAltLogoText}
-        src={props.turbinaLogo}
-      />
+      <h1
+        className="header__title"
+        aria-label={props.config.titleText}
+      >
+        <img
+          className="header__logo-turbina"
+          alt={props.config.turbinaAltLogoText}
+          src={props.turbinaLogo}
+        />
+      </h1>
       <div className="header__menu-section">
         <button
           className="header__menu-button"
+          aria-label={props.config.menuButtonLabel}
         >
           {props.config.menuButtonText}
         </button>
