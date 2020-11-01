@@ -7,7 +7,7 @@
 Клонировать репозиторий:
 
 ```
-git clone https://github.com/MelnikovAleksei/travel-from.git
+git clone https://github.com/MelnikovAleksei/marshak-musical-project.git
 ```
 
 В директории проекта запустить приложение в режиме разработки:
