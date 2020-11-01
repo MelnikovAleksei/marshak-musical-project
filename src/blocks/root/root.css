@@ -1,0 +1,7 @@
+.root {
+  font-family: 'Inter', Arial, sans-serif;
+  width: 100%;
+  min-width: 300px;
+  margin: 0 auto;
+  position: relative;
+}
