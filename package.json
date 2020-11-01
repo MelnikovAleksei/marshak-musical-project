@@ -18,7 +18,7 @@
     }
   ],
   "description": "Website for the special music project of the Marshak bookstore",
-  "homepage": "https://melnikovaleksei.github.io",
+  "homepage": ".",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
