@@ -1,11 +1,8 @@
 import React from 'react';
 import Article from './Article';
-import articlesConfig from '../utils/articlesConfig';
+import articles from '../utils/articles';
 
 function Main() {
-
-  const articles = articlesConfig.articles;
-
   return (
     <main className="main">
       <div className="main__player-container">
