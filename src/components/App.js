@@ -4,12 +4,10 @@ import turbinaLogo from '../images/logo/turbina-logo.png';
 import Header from './Header';
 import Main from './Main';
 import headerConfig from '../utils/headerConfig';
+import strimingsServices from '../utils/strimingsServices';
 import '../index.css';
 
 function App() {
-
-  const strimingsServicesList = headerConfig.strimingsServices;
-
   return (
     <div className="root">
       <Header
@@ -17,10 +15,10 @@ function App() {
         marshakLogo={marshakLogo}
         turbinaLogo={turbinaLogo}
       >
-        {strimingsServicesList.map((striming, index) =>
+        {strimingsServices.map((striming) =>
           <li
             className="header__menu-item"
-            key={index}
+            key={striming.id}
           >
             <a
               className="header__menu-link"
