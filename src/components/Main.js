@@ -1,6 +1,8 @@
 import React from 'react';
 import Article from './Article';
+
 import articles from '../utils/articles';
+import FormContainer from './FormContainer';
 
 function Main() {
   return (
@@ -29,7 +31,7 @@ function Main() {
       </div>
       <div className="main__form-container">
         <section className="main__section forms">
-          <div>Form component</div>
+          <FormContainer />
         </section>
       </div>
     </main>
