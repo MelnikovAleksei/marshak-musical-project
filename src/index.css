@@ -11,3 +11,5 @@
 @import url(./blocks/main/__about-container/main__about-container.css);
 
 @import url(./blocks/main/__form-container/main__form-container.css);
+
+@import url(./blocks/form/__input/_state/_error/form__input_state_error.css);
