@@ -98,8 +98,8 @@ function FormComponent(props) {
           name="offer"
           className={props.offerError ? "form__input form__input_state_error" : "form__input"}
           aria-label="Согласен с офертой"
-          value={props.offer}
-          checked={props.offer}
+          value={props.offerState}
+          checked={props.offerState}
           onChange={props.handleChange}
           id="offer"
           required
@@ -118,6 +118,10 @@ function FormComponent(props) {
       >
         Отправить
       </button>
+      <FormError
+        name={'responseError'}
+        errorMessage={props.responseError}
+      />
     </form>
   )
 }

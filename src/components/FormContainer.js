@@ -1,5 +1,6 @@
 import React from 'react';
 import FormComponent from './FormComponent';
+import api from '../utils/api';
 
 class FormContainer extends React.Component {
   constructor() {
@@ -18,22 +19,38 @@ class FormContainer extends React.Component {
       emailState: false,
       telState: false,
       poemsState: false,
-      offer: false,
-      formState: false
+      offerState: false,
+      formState: false,
+      responseError: ''
     };
-    this.initialState = this.state;
+    this.initialState = {
+      fullName: '',
+      email: '',
+      tel: '',
+      poems: '',
+      fullNameError: '',
+      emailError: '',
+      telError: '',
+      poemsError: '',
+      offerError: '',
+      fullNameState: false,
+      emailState: false,
+      telState: false,
+      poemsState: false,
+      offerState: false,
+      formState: false,
+      responseError: ''
+    };
     this.handleChange = this.handleChange.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
   }
 
   validateForm() {
-    this.setState({
-      formState:  this.state.fullNameState &&
-                  this.state.emailState &&
-                  this.state.telState &&
-                  this.state.poemsState &&
-                  this.state.offerState
-    })
+    this.setState({formState: this.state.fullNameState &&
+                              this.state.emailState &&
+                              this.state.telState &&
+                              this.state.poemsState &&
+                              this.state.offerState})
   }
 
   setValidState(fieldName, isValid, validationMessage) {
@@ -79,7 +96,7 @@ class FormContainer extends React.Component {
     const {name, value, type, checked} = evt.target;
     if(type === 'checkbox') {
       this.setState({
-        [name]: checked
+        [`${name}State`]: checked
       }, () => { this.validateField(name, evt) })
     } else {
         this.setState({
@@ -90,6 +107,11 @@ class FormContainer extends React.Component {
 
   handleSubmit(evt) {
     evt.preventDefault();
+    api.post(this.state)
+      .then(res => console.log(res))
+      .catch((err) => {
+        this.setState({responseError: `Произошла ошибка при отправке формы: ${err}`});
+      })
     evt.target.reset();
     this.setState(this.initialState);
   }
