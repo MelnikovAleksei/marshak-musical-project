@@ -6,33 +6,7 @@ const headerConfig = {
   turbinaAltLogoText: 'Логотип музыкального проекта Турбина',
   menuButtonText: 'Стриминги',
   menuButtonLabel: 'Открыть список стриминговых сервисов',
-  menuLabel: 'Меню с ссылками на стриминговые сервисы',
-  strimingsServices: [
-    {
-      title: 'Яндекс.Музыка',
-      url: 'https://music.yandex.ru/',
-      targetIsBlank: true,
-      lang: 'ru'
-    },
-    {
-      title: 'Spotify',
-      url: 'https://www.spotify.com/',
-      targetIsBlank: true,
-      lang: 'en'
-    },
-    {
-      title: 'Apple Music',
-      url: 'https://www.apple.com/ru/apple-music/',
-      targetIsBlank: true,
-      lang: 'en'
-    },
-    {
-      title: 'VK Music',
-      url: 'https://vk.com/',
-      targetIsBlank: true,
-      lang: 'en'
-    }
-  ]
+  menuLabel: 'Меню с ссылками на стриминговые сервисы'
 }
 
 export default headerConfig;
