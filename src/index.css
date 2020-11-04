@@ -6,6 +6,27 @@
 
 @import url(./blocks/header/header.css);
 
+@import url(./blocks/header/__menu-container/header__menu-container.css);
+
+@import url(./blocks/header/__logo-container/header__logo-container.css);
+@import url(./blocks/header/__nav-container/header__nav-container.css);
+
+@import url(./blocks/header/__logo-marshak/header__logo-marshak.css);
+
+@import url(./blocks/header/__menu-container/header__menu-container.css);
+@import url(./blocks/header/__menu/header__menu.css);
+@import url(./blocks/header/__menu-button/header__menu-button.css);
+@import url(./blocks/header/__menu-button/_active/header__menu-button-active.css);
+@import url(./blocks/header/__menu-list/header__menu-list.css);
+@import url(./blocks/header/__menu-list/_opened/header__menu-list_opened.css);
+
+@import url(./blocks/header/__menu-item/header__menu-item.css);
+
+@import url(./blocks/header/__menu-link/header__menu-link.css);
+
+@import url(./blocks/header/__title/header__title.css);
+@import url(./blocks/header/__logo-turbina/header__logo-turbina.css);
+
 @import url(./blocks/main/main.css);
 
 @import url(./blocks/main/__about-container/main__about-container.css);
