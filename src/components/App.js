@@ -9,12 +9,21 @@ import strimingsServices from '../utils/strimingsServices';
 import '../index.css';
 
 function App() {
+
+  const [menuIsOpen, setMenuIsOpen] = React.useState(false);
+
+  function handleMenuButtonClick() {
+    setMenuIsOpen(!menuIsOpen);
+  }
+
   return (
     <div className="root">
       <Header
         config={headerConfig}
         marshakLogo={marshakLogo}
         turbinaLogo={turbinaLogo}
+        onMenuButtonClick={handleMenuButtonClick}
+        menuIsOpen={menuIsOpen}
       >
         {strimingsServices.map((striming) =>
           <li

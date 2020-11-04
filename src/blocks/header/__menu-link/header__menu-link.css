@@ -1,0 +1,23 @@
+.header__menu-link {
+  color: rgba(255,255,255,1);
+  text-decoration: none;
+  border: 2px solid rgba(255,255,255,1);
+  border-radius: 30px;
+  padding: 8px 18px;
+  opacity: 1;
+  transition: opacity .3s ease;
+}
+
+.header__menu-link:hover {
+  opacity: .8;
+}
+
+.header__menu-link:focus {
+  opacity: .8;
+}
+
+@media screen and (max-width: 768px) {
+  .header__menu-link {
+    padding: 5px 10px;
+  }
+}
