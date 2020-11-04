@@ -16,7 +16,7 @@
 @import url(./blocks/header/__menu-container/header__menu-container.css);
 @import url(./blocks/header/__menu/header__menu.css);
 @import url(./blocks/header/__menu-button/header__menu-button.css);
-@import url(./blocks/header/__menu-button/_active/header__menu-button-active.css);
+@import url(./blocks/header/__menu-button/_active/header__menu-button_active.css);
 @import url(./blocks/header/__menu-list/header__menu-list.css);
 @import url(./blocks/header/__menu-list/_opened/header__menu-list_opened.css);
 

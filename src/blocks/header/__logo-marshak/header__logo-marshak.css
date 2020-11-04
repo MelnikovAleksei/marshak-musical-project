@@ -3,7 +3,7 @@
   height: 50px;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .header__logo-marshak {
     width: 32px;
     height: 32px;

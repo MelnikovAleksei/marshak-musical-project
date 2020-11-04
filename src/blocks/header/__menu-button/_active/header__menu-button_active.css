@@ -1,0 +1,11 @@
+.header__menu-button_active {
+  width: 28px;
+  height: 28px;
+  background-image: url(../../../../images/menu/close-button-image.png);
+  background-position: center;
+  background-size: 11px;
+  background-repeat: no-repeat;
+  background-color: unset;
+  cursor: pointer;
+}
+

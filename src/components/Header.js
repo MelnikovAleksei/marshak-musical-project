@@ -21,7 +21,7 @@ function Header(props) {
         <div className="header__nav-container">
           <button
             className={props.menuIsOpen ?
-              "header__menu-button-active"
+              "header__menu-button header__menu-button_active"
               :
               "header__menu-button"
             }
