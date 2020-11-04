@@ -1,13 +1,14 @@
 import React    from 'react';
 import Article  from './Article';
 import articles from '../utils/articles';
-import Audio        from "../components/Player/Audio";
+import Player   from "./Player";
 
 function Main() {
   return (
     <main className="main">
-      <div className="main__player-container">
-        <Audio/>
+      <Player/>
+      <div >
+
       </div>
       <div className="main__about-container">
         <section className="main__section articles">

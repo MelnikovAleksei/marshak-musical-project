@@ -2,12 +2,16 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: cornflowerblue;
+  background-color: black;
+  max-width: 1280px;
 }
 
 .song {
   user-select: none;
   margin: 0 20px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
 
 .song__title {
@@ -28,31 +32,54 @@
 .controls {
   background-color: transparent;
   border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.controls:focus {
+.player__button {
+  border: none;
+  background: transparent;
+}
+
+.player__button:focus {
   outline: none;
 }
 
-.controls:hover {
+.player__button:hover {
   cursor: pointer;
 }
 
-svg {
-  margin-top: 5px;
-  color: white;
+.player__button_play {
+  color: #FFFFFF;
+  width: 18px;
+  height: 22px;
+  cursor: pointer;
+}
+
+.player__button_pause {
+  color: #FFFFFF;
+  width: 18px;
+  height: 22px;
+  cursor: pointer;
 }
 
 .bar {
+
   display: flex;
   user-select: none;
-  width: 100%;
   color:#FFFFFF;
 }
 
 .bar__progress {
+  width: 1146px;
+  margin-top: 35px;
   flex: 1;
-  margin: 0 20px;
   cursor: pointer;
   height: 2px;
+}
+
+.bar__time {
+  margin-bottom: 25px;
+  font-size: 25px;
 }
