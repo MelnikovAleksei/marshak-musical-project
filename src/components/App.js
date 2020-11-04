@@ -2,6 +2,7 @@ import React from 'react';
 import marshakLogo from '../images/logo/marshak-logo.png';
 import turbinaLogo from '../images/logo/turbina-logo.png';
 import Header from './Header';
+import Footer from './Footer';
 import headerConfig from '../utils/headerConfig';
 import '../index.css';
 
@@ -33,6 +34,7 @@ function App() {
           </li>
         )}
       </Header>
+      <Footer />
     </div>
   );
 }
