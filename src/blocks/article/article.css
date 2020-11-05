@@ -1,9 +1,0 @@
-@import url(./__title/article__title.css);
-@import url(./__paragraph/article__paragraph.css);
-
-.article{
-  font-weight: 400;
-  font-size: 18px;
-  font-style: normal;
-  margin-bottom: 90px;
-}
