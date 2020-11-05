@@ -19,14 +19,16 @@ function Main() {
               {article.type === 'paragraph' ?
                 article.texts.map((paragraph) =>
                   <p
-                    className="article__text"
+                    className="article__text paragraph"
                     key={paragraph.id}
                   >
                     {paragraph.text}
                   </p>
                 )
               :
-                <ul>
+                <ul
+                  className="article__list"
+                >
                   {article.texts.map((listItem) =>
                     <li
                       className="article__text article__list-item"

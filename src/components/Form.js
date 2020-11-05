@@ -39,7 +39,7 @@ function Form(props) {
   return(
     <>
       <h2 className="title">{formConfig.title}</h2>
-      <h3 className="subtitle">{formConfig.subtitle}</h3>
+      <p className="paragraph">{formConfig.subtitle}</p>
       <form
         className="form"
         name="poem"
