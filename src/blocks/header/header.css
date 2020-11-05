@@ -1,7 +1,4 @@
 .header {
-  background: linear-gradient(179deg, rgb(238, 209, 218) 0%, rgb(221, 151, 153) 24%, rgb(147, 131, 143) 44%, rgb(110, 137, 170) 63%, rgb(203, 192, 200) 87%);
-  background-position: center;
-  background-repeat: no-repeat;
   min-height: 100vh;
   margin: 0 auto;
 }
