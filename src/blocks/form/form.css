@@ -1,0 +1,14 @@
+@import url(./__fieldset/form__fieldset.css);
+@import url(./__input/form__input.css);
+
+.form{
+margin: 60px 0 110px 51px;
+width: 600px;
+display: flex;
+flex-direction: column;
+align-items: center;
+box-sizing: border-box;
+background: #fff;
+box-shadow: 0 0 25px rgba(0,0,0,.15);
+border-radius: 10px;
+}

@@ -2,4 +2,11 @@
   background-color: #ffffff;
   border-radius: 10px 10px 0 0;
   margin: 0 10px;
+  width: 1260px;
+}
+
+@media screen and (max-width: 768px) {
+  .main__about-container {
+    width: 748px;
+  }
 }
