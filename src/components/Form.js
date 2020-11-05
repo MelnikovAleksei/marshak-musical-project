@@ -126,7 +126,7 @@ function Form(props) {
           className="form__fieldset"
           aria-label="Согласие с офертой"
         >
-          <label>
+          <label className="form__checkbox-label">
             <input
               type="checkbox"
               name="offer"

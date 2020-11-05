@@ -16,7 +16,8 @@
 
 @media screen and (max-width: 768px) {
   .main__section {
-    max-width: 400px;
+    max-width: 748px;
+    margin: 0 auto;
   }
 }
 

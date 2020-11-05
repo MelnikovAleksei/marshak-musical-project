@@ -12,3 +12,11 @@
     padding-left: 20px;
   }
 }
+
+
+
+@media screen and (max-width: 320px) {
+  .main__about-container {
+    width: 310px;
+  }
+}

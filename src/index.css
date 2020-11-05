@@ -37,3 +37,11 @@
 @import url(./blocks/article/__list-item/article__list-item.css);
 @import url(./blocks/paragraph/paragraph.css);
 @import url(./blocks/main/__form-container/main__form-container.css);
+
+
+@import url(./blocks/form/form.css);
+@import url(./blocks/form/__fieldset/form__fieldset.css);
+@import url(./blocks/form/__input/form__input.css);
+/* @import url(./blocks/form/__input/form__input-error.css); */
+@import url(./blocks/form/__checkbox-label/form__checkbox-label.css);
+@import url(./blocks/form/__submit-button.css/form__submit-button.css);
