@@ -1,8 +1,7 @@
 import React from 'react';
 import Article from './Article';
-
 import articles from '../utils/articles';
-import FormContainer from './FormContainer';
+import Form from './Form';
 
 function Main() {
   return (
@@ -17,21 +16,34 @@ function Main() {
               title={article.title}
               key={article.id}
             >
-              {article.paragraphs.map((paragraph) =>
-                <p
-                  className="article__paragraph"
-                  key={paragraph.id}
-                >
-                  {paragraph.text}
-                </p>
-              )}
+              {article.type === 'paragraph' ?
+                article.texts.map((paragraph) =>
+                  <p
+                    className="article__text"
+                    key={paragraph.id}
+                  >
+                    {paragraph.text}
+                  </p>
+                )
+              :
+                <ul>
+                  {article.texts.map((listItem) =>
+                    <li
+                      className="article__text article__list-item"
+                      key={listItem.id}
+                    >
+                      {listItem.text}
+                    </li>
+                  )}
+                </ul>
+              }
             </Article>
           )}
         </section>
       </div>
       <div className="main__form-container">
         <section className="main__section forms">
-          <FormContainer />
+          <Form />
         </section>
       </div>
     </main>
