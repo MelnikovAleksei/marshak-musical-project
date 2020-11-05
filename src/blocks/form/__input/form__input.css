@@ -1,5 +1,22 @@
 .form__input{
+  margin: 10px 0 0;
+  padding: 20px 5px;
   width: 600px;
-  height: 60px;
-  padding-left: 51px;
+  height: 20px;
+  border: none;
+  border-bottom: 2px solid black;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: left;
+  display: inline-block;
+  color: rgba(0,0,0,0.4);
 }
+
+
+/* Font Size: 16px
+Line Height: 20px
+Line Height: 103%
+Align: Left
+Vertical Align: Top */
