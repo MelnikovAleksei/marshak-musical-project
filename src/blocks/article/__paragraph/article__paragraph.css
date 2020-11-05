@@ -1,0 +1,36 @@
+.article__paragraph {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 22px;
+  margin: 0;
+
+}
+
+
+.article__paragraph:first-child {
+  line-height: 30px;
+}
+
+@media screen and (max-width: 1024px) {
+  .article__paragraph {
+    font-size: 15px;
+    line-height: 22px;
+  }
+}
+
+/*
+@media screen and (max-width: 768px) {
+  .article__paragraph {
+    font-size: 12px;
+    line-height: 16px;
+  }
+} */
+
+
+@media screen and (max-width: 320px) {
+  .article__paragraph {
+    font-size: 12px;
+    line-height: 16px;
+  }
+}

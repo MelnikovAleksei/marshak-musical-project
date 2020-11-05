@@ -29,6 +29,10 @@
 
 @import url(./blocks/main/main.css);
 
+@import url(./blocks/articles/articles.css);
+
+@import url(./blocks/article/article.css);
+
 @import url(./blocks/main/__about-container/main__about-container.css);
 
 @import url(./blocks/main/__form-container/main__form-container.css);

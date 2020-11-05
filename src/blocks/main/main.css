@@ -1,3 +1,7 @@
+@import url(__about-container/main__about-container.css);
+@import url(__section/main__section.css);
+
+@import url(__form-container/main__form-container.css);
 .main {
 
 }

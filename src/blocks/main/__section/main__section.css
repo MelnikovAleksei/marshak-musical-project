@@ -1,0 +1,24 @@
+.main__section {
+ width: 760px;
+}
+
+
+@media screen and (max-width: 1024px) {
+  .main__section {
+    width: 680px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .main__section {
+    width: 748px;
+  }
+}
+
+
+
+@media screen and (max-width: 320px) {
+  .main__section {
+    width: 270px;
+  }
+}

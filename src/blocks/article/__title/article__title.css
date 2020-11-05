@@ -1,0 +1,27 @@
+.article__title {
+  font-family: Inter;
+  font-style: italic;
+  font-weight: normal;
+  font-size: 50px;
+  line-height: 61px;
+  padding-bottom: 40px;
+margin: 0;
+}
+
+.article__title:first-child{
+  padding-top: 0;
+}
+
+@media screen and (max-width: 1024px) {
+  .article__title {
+    font-size: 46px;
+    line-height: 56px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .article__title {
+    font-size: 32px;
+    line-height: 39px;
+  }
+}
