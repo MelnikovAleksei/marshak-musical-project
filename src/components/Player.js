@@ -1,13 +1,15 @@
 import React from 'react'
+import PlayBtn from "../images/player/play.svg"
+import PauseBtn from "../images/player/pause.svg";
 
 class Player extends React.Component {
   state = {
     index: 3,
     currentTime: '0:00',
-    musicList: [{number:'№1 ', name:'Nice piano and ukulele ', author: 'Royalty ', audio:'https://www.bensound.com/bensound-music/bensound-buddy.mp3 ', duration: '2:02'},
-                {number:'№2 ',name:'Gentle acoustic', author: 'Acoustic', audio:'https://www.bensound.com//bensound-music/bensound-sunny.mp3', duration: '2:20'},
-                {number:'№3 ',name:'Corporate motivational', author: 'Corporate', audio:'https://www.bensound.com/bensound-music/bensound-energy.mp3', duration: '2:59'},
-                {number:'№4 ',name:'Slow cinematic', author: 'Royalty', audio:'https://www.bensound.com/bensound-music/bensound-slowmotion.mp3', duration: '3:26'}],
+    musicList: [{number:'№1 ', name:'Nice piano and ukulele -', author: 'Royalty ', audio:'https://www.bensound.com/bensound-music/bensound-buddy.mp3 ', duration: '2:02'},
+                {number:'№2 ',name:'Gentle acoustic - ', author: 'Acoustic', audio:'https://www.bensound.com//bensound-music/bensound-sunny.mp3', duration: '2:20'},
+                {number:'№3 ',name:'Corporate motivational -', author: 'Corporate', audio:'https://www.bensound.com/bensound-music/bensound-energy.mp3', duration: '2:59'},
+                {number:'№4 ',name:'Slow cinematic -', author: 'Royalty', audio:'https://www.bensound.com/bensound-music/bensound-slowmotion.mp3', duration: '3:26'}],
     pause: false,
   };
 
@@ -151,36 +153,40 @@ class Player extends React.Component {
     const { musicList, index, currentTime, pause } = this.state;
     const currentSong = musicList[index];
     return (
-      <div className="card">
-        <div className="current__song">
+      <div className="player">
+        <div className="player__current-song">
           <audio ref={ref => this.playerRef = ref}>
             <source src={ currentSong.audio } type="audio/ogg"/>
             Your browser does not support the audio element.
           </audio>
-          <span className="current__song_number">{ currentSong.number }</span>
-          <span className="current__song_name">{ currentSong.name }</span>
-          <span className="current__song_author">{ currentSong.author }</span>
+          <span className="player__song_number">{ currentSong.number }</span>
+          <span className="player__song_name">{ currentSong.name }</span>
+          <span className="player__song_author">{ currentSong.author }</span>
 
-          <div className="time">
-            <div className="time__current">{ currentTime }</div>
+          <div className="player__time">
+            <div className="player__current-time">{ currentTime }</div>
           </div>
 
-          <div ref={ref => this.timelineRef = ref} id="timeline">
-            <div ref={ref => this.playheadRef = ref} id="playhead"/>
-            <div ref={ref => this.hoverPlayheadRef = ref} class="hover-playhead" data-content="0:00"/>
+          <div ref={ref => this.timelineRef = ref} id="timeline" className="player__timeline">
+            <div ref={ref => this.playheadRef = ref} id="playhead" className="player__playhead"/>
+            <div ref={ref => this.hoverPlayheadRef = ref} class="player__playhead-hover" data-content="0:00"/>
           </div>
 
-          <div className="controls">
-            <button onClick={this.playOrPause} className="play__btn">
+          <div className="player__controls">
+            <button onClick={this.playOrPause} className="player__btn">
               {
-                (!pause) ? <i className="fa fa__play"/>
-                  :<i class="fa fa__pause"/>
+                (!pause) ? <img className="player__btn-play" src={PlayBtn} alt="play button"/>
+                  :<img class="player__btn-pause" src={PauseBtn} alt="pause button"/>
               }
             </button>
           </div>
 
         </div>
-        <div className="play__list" >
+
+        <button className="switch" >Текст песни</button>
+        <button className="more" />
+
+        <div className="playlist" >
           {musicList.map( (music, key=0) =>
             <div key={key}
                  onClick={()=>this.clickAudio(key)}
@@ -188,10 +194,10 @@ class Player extends React.Component {
                  (index === key && !pause ?'current-audio':'') +
                  (index === key && pause ?'play-now':'')} >
 
-              <div className="track__info" >
-                <span className="track__info_number" >{music.number}</span>
-                <span className="track__info_name" >{music.name}</span>
-                <span className="track__info_author" >{music.author}</span>
+              <div className="playlist__info" >
+                <span className="playlist__info_number" >{music.number}</span>
+                <span className="playlist__info_name" >{music.name}</span>
+                <span className="playlist__info_author" >{music.author}</span>
               </div>
             </div>
           )}

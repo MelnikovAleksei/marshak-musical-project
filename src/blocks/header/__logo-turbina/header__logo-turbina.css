@@ -1,0 +1,9 @@
+.header__logo-turbina {
+  max-width: 860px;
+}
+
+@media screen and (max-width: 1024px) {
+  .header__logo-turbina {
+    max-width: 90%;
+  }
+}

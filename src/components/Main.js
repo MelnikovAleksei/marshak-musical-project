@@ -1,14 +1,14 @@
-import React    from 'react';
-import Article  from './Article';
+import React from 'react';
+import Article from './Article';
 import articles from '../utils/articles';
-import Player   from "./Player";
+import Form from './Form';
+import Player  from "./Player";
 
 function Main() {
   return (
     <main className="main">
-      <Player/>
-      <div >
-
+      <div className="main__player-container">
+        <Player/>
       </div>
       <div className="main__about-container">
         <section className="main__section articles">
@@ -17,21 +17,36 @@ function Main() {
               title={article.title}
               key={article.id}
             >
-              {article.paragraphs.map((paragraph) =>
-                <p
-                  className="article__paragraph"
-                  key={paragraph.id}
+              {article.type === 'paragraph' ?
+                article.texts.map((paragraph) =>
+                  <p
+                    className="article__text paragraph"
+                    key={paragraph.id}
+                  >
+                    {paragraph.text}
+                  </p>
+                )
+              :
+                <ul
+                  className="article__list"
                 >
-                  {paragraph.text}
-                </p>
-              )}
+                  {article.texts.map((listItem) =>
+                    <li
+                      className="article__text article__list-item"
+                      key={listItem.id}
+                    >
+                      {listItem.text}
+                    </li>
+                  )}
+                </ul>
+              }
             </Article>
           )}
         </section>
       </div>
       <div className="main__form-container">
         <section className="main__section forms">
-          <div>Form component</div>
+          <Form />
         </section>
       </div>
     </main>

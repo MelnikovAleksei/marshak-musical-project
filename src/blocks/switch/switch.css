@@ -1,0 +1,11 @@
+.switch {
+  width: 135px;
+  height: 35px;
+  border: 2px solid #FFFFFF;
+  box-sizing: border-box;
+  border-radius: 30px;
+  background: none;
+  margin-left: 20px;
+  color: white;
+  outline: none;
+}

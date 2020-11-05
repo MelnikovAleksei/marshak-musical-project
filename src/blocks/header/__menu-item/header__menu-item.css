@@ -1,0 +1,14 @@
+.header__menu-item {
+  padding-bottom: 24px;
+}
+
+@media screen and (max-width: 767px) {
+  .header__menu-item {
+    padding-bottom: 20px;
+  }
+}
+
+.header__menu-item:last-child {
+  padding-bottom: 0;
+}
+

@@ -1,0 +1,31 @@
+.header__menu-button {
+  display: none;
+}
+
+@media screen and (max-width: 767px) {
+  .header__menu-button {
+    display: block;
+    font-family: 'Inter', Arial, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 12px;
+    line-height: 1.2;
+    align-self: flex-end;
+    margin-bottom: 15px;
+    color: rgba(255,255,255,1);
+    background-color: unset;
+    text-decoration: none;
+    border: 2px solid rgba(255,255,255,1);
+    border-radius: 30px;
+    padding: 5px 10px;
+    cursor: pointer;
+    opacity: 1;
+    transition: opacity .3s ease;
+  }
+  .header__menu-button:hover {
+    opacity: .8;
+  }
+  .header__menu-button:focus {
+    opacity: .8;
+  }
+}

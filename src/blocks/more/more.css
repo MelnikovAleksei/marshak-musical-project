@@ -1,0 +1,11 @@
+.more {
+  background-position: center;
+  background-image: url("../../images/player/more.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-color:rgba(0, 0, 0, 0);
+  border: none;
+  width: 24px;
+  height: 24px;
+  outline: none;
+}
