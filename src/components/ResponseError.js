@@ -1,6 +1,6 @@
 import React from 'react';
 
-function FormError(props) {
+function ResponseError(props) {
   return(
     <span
       className={props.className}
@@ -13,4 +13,4 @@ function FormError(props) {
   )
 }
 
-export default FormError;
+export default ResponseError;

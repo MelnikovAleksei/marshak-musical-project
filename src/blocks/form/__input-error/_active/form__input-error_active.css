@@ -1,0 +1,6 @@
+.form__input-error_active {
+  visibility: visible;
+  opacity: 1;
+  min-height: 20px;
+  transition: visibility .3s ease,opacity .3s ease,min-height .3s ease;
+}

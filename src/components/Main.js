@@ -31,7 +31,7 @@ function Main() {
                 >
                   {article.texts.map((listItem) =>
                     <li
-                      className="article__text article__list-item"
+                      className="article__text paragraph article__list-item"
                       key={listItem.id}
                     >
                       {listItem.text}
