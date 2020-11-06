@@ -1,10 +1,28 @@
 import React from 'react';
 
-function Footer() {
+function Footer(props) {
+
+  const currentYear = new Date().getFullYear()
+
   return(
     <footer className="footer">
-      <p className="footer__paragraph">© Маршак, 2020.</p>
-      <p className="footer__paragraph">Сделано студентами <u className="footer__praktikum">Яндекс.Практикум</u></p>
+      <p
+        className="footer__paragraph"
+      >
+        {`© ${props.config.marketName}, ${currentYear}.`}
+      </p>
+      <p
+        className="footer__paragraph">
+      {props.config.paragraphText}
+        <a
+          href={props.config.linkUrl}
+          target={props.config.targetIsBlank && '_blank'}
+          rel="noopener"
+          className="footer__link"
+        >
+          {props.config.linkText}
+        </a>
+      </p>
     </footer>
   )
 }

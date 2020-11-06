@@ -6,6 +6,7 @@ import Main from './Main';
 import Footer from './Footer';
 import headerConfig from '../utils/headerConfig';
 import strimingsServices from '../utils/strimingsServices';
+import footerConfig from '../utils/footerConfig';
 import '../index.css';
 
 function App() {
@@ -43,7 +44,9 @@ function App() {
         )}
       </Header>
       <Main />
-      <Footer />
+      <Footer
+        config={footerConfig}
+      />
     </div>
   );
 }

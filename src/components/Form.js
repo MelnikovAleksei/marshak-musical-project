@@ -74,22 +74,6 @@ function Form(props) {
           aria-label="Контактные данные"
         >
           <input
-            type="email"
-            name="email"
-            className={emailClassName}
-            aria-label="Электронная почта"
-            placeholder="Почта"
-            id="email"
-            required
-            disabled={isSuccesfullSubmit}
-            {...bindEmail}
-          />
-          <FormError
-            name="email"
-            className={emailErrorClassName}
-            errorMessage={emailValidationMessage}
-          />
-          <input
             type="tel"
             name="tel"
             className={telClassName}
@@ -105,6 +89,22 @@ function Form(props) {
             name="tel"
             className={telErrorClassName}
             errorMessage={telValidationMessage}
+          />
+          <input
+            type="email"
+            name="email"
+            className={emailClassName}
+            aria-label="Электронная почта"
+            placeholder="Почта"
+            id="email"
+            required
+            disabled={isSuccesfullSubmit}
+            {...bindEmail}
+          />
+          <FormError
+            name="email"
+            className={emailErrorClassName}
+            errorMessage={emailValidationMessage}
           />
         </fieldset>
         <fieldset
