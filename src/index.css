@@ -53,3 +53,6 @@
 @import url(./blocks/form/__input-error/_active/form__input-error_active.css);
 @import url(./blocks/form/__checkbox-label/form__checkbox-label.css);
 @import url(./blocks/form/__submit-button.css/form__submit-button.css);
+@import url(./blocks/footer/footer.css);
+@import url(./blocks/footer/__paragraph/footer__paragraph.css);
+@import url(./blocks/footer/__praktikum/footer__praktikum.css);
