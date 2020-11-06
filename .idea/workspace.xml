@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:feat" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:feat" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="BRANCH:origin/feat/main-form" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </select>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="4a6e3522-e82a-43ef-91c6-143695b81e50" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/blocks/header/header.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/blocks/header/header.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/blocks/main/__player-container/main__player-container.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Player.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Player.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/images/background/background-header.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/images/background/background-header.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/images/background/background-main.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/images/background/background-main.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/images/player/pause.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/images/player/pause.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/images/player/play.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/images/player/play.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/utils/playerConfig.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/utils/strimingsServices.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/strimingsServices.js" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="main" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="JsFlowSettings">
+    <service-enabled>true</service-enabled>
+    <exe-path />
+    <other-services-enabled>true</other-services-enabled>
+    <auto-save>true</auto-save>
+  </component>
+  <component name="ProjectId" id="1jjoWaH97sa09WrH7hl6IR9SwXV" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/images/player" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.standard" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.standard" value="project" />
+    <property name="node.js.selected.package.eslint" value="" />
+    <property name="node.js.selected.package.standard" value="" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="configurable.group.tools" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/images/player" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/images/player" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="4a6e3522-e82a-43ef-91c6-143695b81e50" name="Default Changelist" comment="" />
+      <created>1604326893965</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1604326893965</updated>
+      <workItem from="1604326895407" duration="9815000" />
+      <workItem from="1604409360336" duration="172000" />
+      <workItem from="1604423437615" duration="6281000" />
+      <workItem from="1604471980864" duration="2364000" />
+      <workItem from="1604559583606" duration="956000" />
+      <workItem from="1604576176682" duration="5000" />
+      <workItem from="1604576268080" duration="111000" />
+      <workItem from="1604578974038" duration="45000" />
+      <workItem from="1604583178586" duration="662000" />
+      <workItem from="1604597368159" duration="3666000" />
+      <workItem from="1604604469577" duration="119000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="origin/feat/main-form" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="581" y="337" key="#ESLint" timestamp="1604597757033">
+      <screen x="0" y="23" width="1440" height="829" />
+    </state>
+    <state x="581" y="337" key="#ESLint/0.23.1440.829/-248.-1057.1920.1057@0.23.1440.829" timestamp="1604597757033" />
+    <state x="449" y="254" key="#Images" timestamp="1604335771733">
+      <screen x="0" y="23" width="1440" height="829" />
+    </state>
+    <state x="449" y="254" key="#Images/0.23.1440.829/-248.-1057.1920.1057@0.23.1440.829" timestamp="1604335771733" />
+    <state x="443" y="246" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1604335776889">
+      <screen x="0" y="23" width="1440" height="829" />
+    </state>
+    <state x="443" y="246" key="#com.intellij.fileTypes.FileTypeChooser/0.23.1440.829/-248.-1057.1920.1057@0.23.1440.829" timestamp="1604335776889" />
+    <state x="458" y="191" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1604598363083">
+      <screen x="0" y="23" width="1440" height="829" />
+    </state>
+    <state x="458" y="191" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.23.1440.829/-248.-1057.1920.1057@0.23.1440.829" timestamp="1604598363083" />
+    <state x="100" y="123" width="1240" height="629" key="DiffContextDialog" timestamp="1604339874133">
+      <screen x="0" y="23" width="1440" height="829" />
+    </state>
+    <state x="100" y="123" width="1240" height="629" key="DiffContextDialog/0.23.1440.829/-248.-1057.1920.1057@0.23.1440.829" timestamp="1604339874133" />
+    <state width="1419" height="215" key="GridCell.Tab.0.bottom" timestamp="1604604527269">
+      <screen x="0" y="23" width="1440" height="829" />
+    </state>
+    <state width="1419" height="215" key="GridCell.Tab.0.bottom/0.23.1440.829/-248.-1057.1920.1057@-248.-1057.1920.1057" timestamp="1604326960643" />
+    <state width="1419" height="215" key="GridCell.Tab.0.bottom/0.23.1440.829/-248.-1057.1920.1057@0.23.1440.829" timestamp="1604604527269" />
+    <state width="1419" height="215" key="GridCell.Tab.0.center" timestamp="1604604527267">
+      <screen x="0" y="23" width="1440" height="829" />
+    </state>
+    <state width="1419" height="215" key="GridCell.Tab.0.center/0.23.1440.829/-248.-1057.1920.1057@-248.-1057.1920.1057" timestamp="1604326960640" />
+    <state width="1419" height="215" key="GridCell.Tab.0.center/0.23.1440.829/-248.-1057.1920.1057@0.23.1440.829" timestamp="1604604527267" />
+    <state width="1419" height="215" key="GridCell.Tab.0.left" timestamp="1604604527266">
+      <screen x="0" y="23" width="1440" height="829" />
+    </state>
+    <state width="1419" height="215" key="GridCell.Tab.0.left/0.23.1440.829/-248.-1057.1920.1057@-248.-1057.1920.1057" timestamp="1604326960638" />
+    <state width="1419" height="215" key="GridCell.Tab.0.left/0.23.1440.829/-248.-1057.1920.1057@0.23.1440.829" timestamp="1604604527266" />
+    <state width="1419" height="215" key="GridCell.Tab.0.right" timestamp="1604604527268">
+      <screen x="0" y="23" width="1440" height="829" />
+    </state>
+    <state width="1419" height="215" key="GridCell.Tab.0.right/0.23.1440.829/-248.-1057.1920.1057@-248.-1057.1920.1057" timestamp="1604326960641" />
+    <state width="1419" height="215" key="GridCell.Tab.0.right/0.23.1440.829/-248.-1057.1920.1057@0.23.1440.829" timestamp="1604604527268" />
+    <state x="493" y="178" key="VcsDiffUtil.ChangesDialog" timestamp="1604339633225">
+      <screen x="0" y="23" width="1440" height="829" />
+    </state>
+    <state x="493" y="178" key="VcsDiffUtil.ChangesDialog/0.23.1440.829/-248.-1057.1920.1057@0.23.1440.829" timestamp="1604339633225" />
+    <state x="385" y="176" width="670" height="676" key="search.everywhere.popup" timestamp="1604339291368">
+      <screen x="0" y="23" width="1440" height="829" />
+    </state>
+    <state x="385" y="176" width="670" height="676" key="search.everywhere.popup/0.23.1440.829/-248.-1057.1920.1057@0.23.1440.829" timestamp="1604339291368" />
+  </component>
+</project>

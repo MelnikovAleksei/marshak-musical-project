@@ -2,12 +2,13 @@ import React from 'react';
 import Article from './Article';
 import articles from '../utils/articles';
 import Form from './Form';
+import Player  from "./Player";
 
 function Main() {
   return (
     <main className="main">
       <div className="main__player-container">
-        <div>Player component</div>
+        <Player/>
       </div>
       <div className="main__about-container">
         <section className="main__section articles">

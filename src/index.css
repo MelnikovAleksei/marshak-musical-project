@@ -28,6 +28,11 @@
 @import url(./blocks/header/__logo-turbina/header__logo-turbina.css);
 
 @import url(./blocks/main/main.css);
+
+@import url(./blocks/player/player.css);
+@import url(./blocks/switch/switch.css);
+@import url(./blocks/more/more.css);
+
 @import url(./blocks/main/__about-container/main__about-container.css);
 @import url(./blocks/title/title.css);
 @import url(./blocks/main/__section/main__section.css);
