@@ -176,7 +176,7 @@ class Player extends React.Component {
             <button onClick={this.playOrPause} className="player__btn">
               {
                 (!pause) ? <img className="player__btn-play" src={PlayBtn} alt="play button"/>
-                  :<img class="player__btn-pause" src={PauseBtn} alt="pause button"/>
+                  :<img className="player__btn-pause" src={PauseBtn} alt="pause button"/>
               }
             </button>
           </div>
