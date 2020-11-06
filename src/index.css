@@ -45,3 +45,6 @@
 /* @import url(./blocks/form/__input/form__input-error.css); */
 @import url(./blocks/form/__checkbox-label/form__checkbox-label.css);
 @import url(./blocks/form/__submit-button.css/form__submit-button.css);
+@import url(./blocks/footer/footer.css);
+@import url(./blocks/footer/__paragraph/footer__paragraph.css);
+@import url(./blocks/footer/__praktikum/footer__praktikum.css);
