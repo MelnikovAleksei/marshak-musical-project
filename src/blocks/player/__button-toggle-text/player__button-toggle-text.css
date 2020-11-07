@@ -1,0 +1,8 @@
+.player__button-toggle-text {
+  position: absolute;
+  top: 0;
+  left: -10000px;
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility .3s ease,opacity .3s ease;
+}
