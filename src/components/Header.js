@@ -12,7 +12,7 @@ function Header(props) {
             rel="noopener"
           >
             <img
-              className="header__logo-marshak"
+              className="header__logo-small"
               alt={props.config.marshakAltLogoText}
               src={props.marshakLogo}
             />
@@ -51,7 +51,7 @@ function Header(props) {
         aria-label={props.config.titleText}
       >
         <img
-          className="header__logo-turbina"
+          className="header__logo-main"
           alt={props.config.turbinaAltLogoText}
           src={props.turbinaLogo}
         />
