@@ -1,12 +1,12 @@
 import React from 'react';
 
-function Article(props) {
+function Article({title, children}) {
   return (
     <article className="article">
       <h2 className="article__title title">
-        {props.title}
+        {title}
       </h2>
-      {props.children}
+      {children}
     </article>
   )
 }

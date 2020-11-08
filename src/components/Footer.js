@@ -1,6 +1,6 @@
 import React from 'react';
 
-function Footer(props) {
+function Footer({config}) {
 
   const currentYear = new Date().getFullYear()
 
@@ -9,18 +9,18 @@ function Footer(props) {
       <p
         className="footer__paragraph"
       >
-        {`© ${props.config.marketName}, ${currentYear}.`}
+        {`© ${config.marketName}, ${currentYear}.`}
       </p>
       <p
         className="footer__paragraph">
-      {props.config.paragraphText}
+      {config.paragraphText}
         <a
-          href={props.config.linkUrl}
-          target={props.config.targetIsBlank && '_blank'}
+          href={config.linkUrl}
+          target={config.targetIsBlank && '_blank'}
           rel="noopener"
           className="footer__link"
         >
-          {props.config.linkText}
+          {config.linkText}
         </a>
       </p>
     </footer>

@@ -1,14 +1,14 @@
 import React from 'react';
 
-function FormError(props) {
+function FormError({className, name, errorMessage}) {
   return(
     <span
-      className={props.className}
-      id={`${props.name}-error`}
+      className={className}
+      id={`${name}-error`}
       role="status"
       aria-live="polite"
     >
-      {props.errorMessage}
+      {errorMessage}
     </span>
   )
 }

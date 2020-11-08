@@ -5,7 +5,7 @@ import ResponseError from './ResponseError';
 import formConfig from '../utils/formConfig';
 import api from '../utils/api';
 
-function Form(props) {
+function Form() {
 
   const {value:fullName, bind:bindFullName, reset:resetFullName, isValid:isValidFullName, validationMessage:fullNameValidationMessage, inputClassName:fullNameClassName, errorClassName:fullNameErrorClassName} = useInput('');
   const {value:tel, bind:bindTel, reset:resetTel, isValid:isValidTel, validationMessage:telValidationMessage, inputClassName:telClassName, errorClassName:telErrorClassName} = useInput('');
