@@ -1,4 +1,4 @@
-const strimingsServices = [
+const streamingsServices = [
   {
     title: 'Яндекс.Музыка ↗',
     url: 'https://music.yandex.ru/',
@@ -29,4 +29,4 @@ const strimingsServices = [
   }
 ]
 
-export default strimingsServices;
+export default streamingsServices;

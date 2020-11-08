@@ -5,7 +5,7 @@ import Header from './Header';
 import Main from './Main';
 import Footer from './Footer';
 import headerConfig from '../utils/headerConfig';
-import strimingsServices from '../utils/strimingsServices';
+import streamingsServices from '../utils/streamingsServices';
 import footerConfig from '../utils/footerConfig';
 import '../index.css';
 
@@ -26,19 +26,19 @@ function App() {
         onMenuButtonClick={handleMenuButtonClick}
         menuIsOpen={menuIsOpen}
       >
-        {strimingsServices.map((striming) =>
+        {streamingsServices.map((streaming) =>
           <li
             className="header__menu-item"
-            key={striming.id}
+            key={streaming.id}
           >
             <a
               className="header__menu-link"
-              href={striming.url}
-              target={striming.targetIsBlank && '_blank'}
+              href={streaming.url}
+              target={streaming.targetIsBlank && '_blank'}
               rel="noopener"
-              lang={striming.lang}
+              lang={streaming.lang}
             >
-              {striming.title}
+              {streaming.title}
             </a>
           </li>
         )}
