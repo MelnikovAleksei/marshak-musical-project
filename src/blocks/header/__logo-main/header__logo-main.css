@@ -1,15 +1,15 @@
-.header__logo-turbina {
+.header__logo-main {
   max-width: 720px;
 }
 
 @media screen and (max-width: 1024px) {
-  .header__logo-turbina {
+  .header__logo-main {
     max-width: 600px;
   }
 }
 
 @media screen and (max-width: 768px) {
-  .header__logo-turbina {
+  .header__logo-main {
     max-width: 90%;
   }
 }
