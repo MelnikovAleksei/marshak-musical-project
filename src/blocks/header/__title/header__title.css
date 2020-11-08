@@ -1,11 +1,11 @@
 .header__title {
   margin: 0;
   text-align: center;
-  padding-top: 25px;
+  padding-top: 106px;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1280px) {
   .header__title {
-    padding-top: 92px;
+    padding-top: 83px;
   }
 }
