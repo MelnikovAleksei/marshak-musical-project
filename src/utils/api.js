@@ -14,15 +14,16 @@ class Api {
   }
 
   post(data) {
+    const {fullName, email, tel, poems, offer} = data;
     return fetch(`${this._url}`, {
       method: 'POST',
       headers: this._headers,
       body: JSON.stringify({
-        fullName: data.fullName,
-        email: data.email,
-        tel: data.tel,
-        poems: data.poems,
-        offer: data.offer,
+        fullName: fullName,
+        email: email,
+        tel: tel,
+        poems: poems,
+        offer: offer,
       })
     }).then(this._handleOriginalResponse)
   }
