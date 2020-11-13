@@ -1,0 +1,6 @@
+.player__releases_opened {
+  visibility: visible;
+  height: 164px;
+  opacity: 1;
+  transition: visibility .3s ease,opacity .3s ease,height .3s ease;
+}
