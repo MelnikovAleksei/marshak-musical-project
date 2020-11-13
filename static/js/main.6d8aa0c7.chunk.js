@@ -1,2 +1,0 @@
-(this["webpackJsonpmarshak-musical-project"]=this["webpackJsonpmarshak-musical-project"]||[]).push([[0],{10:function(e,t,c){"use strict";c.r(t);var r=c(0),n=c(1),s=c.n(n),o=c(3),a=c.n(o);c(9);var i=function(){return Object(r.jsx)("div",{className:"root",children:Object(r.jsx)("h1",{children:"Hello world!"})})};a.a.render(Object(r.jsx)(s.a.StrictMode,{children:Object(r.jsx)(i,{})}),document.getElementById("root"))},9:function(e,t,c){}},[[10,1,2]]]);
-//# sourceMappingURL=main.6d8aa0c7.chunk.js.map
