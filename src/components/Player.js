@@ -5,8 +5,8 @@ import songsData from '../utils/songsData';
 
 function Player() {
 
+  const [currentPlaylist, setCurrentPlaylist] = React.useState(songsData);
   const [currentSong, setCurrentSong] = React.useState(songsData[0]);
-  const [currentSongIndex, setCurrentSongIndex] = React.useState(0);
 
   const [isOpenList, setIsOpenList] = React.useState(false);
 
@@ -59,24 +59,15 @@ function Player() {
     }
   }
 
-  const nextSong = () => {
-    if (songsData.length - 1 > currentSongIndex) {
-      setCurrentSongIndex(0);
-      setCurrentSong(songsData[currentSongIndex]);
-      audioElement.current.play();
-    } else {
-      setCurrentSongIndex(currentSongIndex + 1);
-      setCurrentSong(currentSongIndex);
-      audioElement.current.play();
-    }
-  }
-
-  const handlePlaylistItemClick = (song, index) => {
-    setIsMusicPlay(false);
+  const handlePlaylistItemClick = (evt) => {
+    const currentSongIndex = evt.target.attributes[0].value;
+    setIsMusicPlay(!isMusicPlay);
+    handlePlayPauseMusic();
     setProgressLineWidth(0);
-    setCurrentSong(song);
-    setCurrentSongIndex(index);
-    setMediaTime(currentSong.time);
+    setCurrentSong(currentPlaylist[currentSongIndex]);
+    setMediaTime(currentPlaylist[currentSongIndex].time);
+    setIsMusicPlay(!isMusicPlay);
+    handlePlayPauseMusic();
   }
 
   const handleButtonToggleList = () => {
@@ -88,12 +79,12 @@ function Player() {
   }
 
   React.useEffect(() => {
+    audioElement.current.addEventListener('canplay', setTime);
     audioElement.current.addEventListener('timeupdate', setTime);
-    audioElement.current.addEventListener('ended', nextSong);
 
-    return function removeListeners() {
+    return function removeEvents() {
+      audioElement.current.removeEventListener('canplay', setTime);
       audioElement.current.removeEventListener('timeupdate', setTime);
-      audioElement.current.removeEventListener('ended', nextSong);
     }
   })
 
@@ -208,10 +199,11 @@ function Player() {
           {songsData.length > 1 ?
             songsData.map((song, index) =>
               <li
+                data-index={index}
                 key={song.id}
                 className="player__playlist-item"
                 lang={song.lang}
-                onClick={() => { handlePlaylistItemClick(song, index) }}
+                onClick={handlePlaylistItemClick}
               >
                 {`${song.name} — ${song.authors}`}
               </li>
