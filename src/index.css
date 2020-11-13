@@ -30,8 +30,18 @@
 @import url(./blocks/main/main.css);
 
 @import url(./blocks/player/player.css);
+@import url(./blocks/player/__controls/player__controls.css);
+@import url(./blocks/player/__button-toggle-music-play/player__button-toggle-music-play.css);
+@import url(./blocks/player/__progress-bar/player__progress-bar.css);
+@import url(./blocks/player/__progress-bar-container/player__progress-bar-container.css);
+@import url(./blocks/player/__progress-bar-line-container/player__progress-bar-line-container.css);
+@import url(./blocks/player/__progress-bar-line/player__progress-bar-line.css);
+@import url(./blocks/player/__song-cover/player__song-cover.css);
 @import url(./blocks/player/__releases/player__releases.css);
 @import url(./blocks/player/__releases/_opened/player__releases_opened.css);
+@import url(./blocks/player/__link-play-video/player__link-play-video.css);
+@import url(./blocks/player/__link-play-video/_visible/player__link-play-video_visible.css);
+@import url(./blocks/player/__link-play-video/_hidden/player__link-play_hidden.css);
 @import url(./blocks/player/__button-toggle-text/player__button-toggle-text.css);
 @import url(./blocks/player/__button-toggle-text/_visible/player__button-toggle-text_visible.css);
 
