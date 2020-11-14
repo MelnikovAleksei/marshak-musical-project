@@ -1,0 +1,29 @@
+.player__button-toggle-text {
+  position: absolute;
+  top: 0;
+  left: -10000px;
+  visibility: hidden;
+  display: block;
+  font-family: 'Inter', Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 12px;
+  line-height: 1.2;
+  color: rgba(255,255,255,1);
+  background-color: unset;
+  text-decoration: none;
+  border: 2px solid rgba(255,255,255,1);
+  border-radius: 30px;
+  padding: 5px 10px;
+  margin: 0 5px;
+  cursor: pointer;
+  opacity: 1;
+  transition: visibility .3s ease,opacity .3s ease;
+}
+
+.player__button-toggle-text:hover {
+  opacity: .8;
+}
+.player__button-toggle-text:focus {
+  opacity: .8;
+}

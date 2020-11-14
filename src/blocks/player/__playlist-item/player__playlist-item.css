@@ -1,0 +1,21 @@
+.player__playlist-item {
+  font-family: 'Inter', Helvetica, Arial, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.2;
+  color: #FFFFFF;
+  margin: 0;
+  padding: 8px 0;
+  cursor: pointer;
+}
+
+.player__playlist-item:hover {
+  font-style: italic;
+  font-weight: 500;
+}
+
+.player__playlist-item:focus {
+  font-style: italic;
+  font-weight: 500;
+}

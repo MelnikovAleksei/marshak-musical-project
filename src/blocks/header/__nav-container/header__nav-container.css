@@ -1,0 +1,13 @@
+.header__nav-container {
+  padding-top: 23px;
+  padding-right: 15px;
+  display: flex;
+  flex-direction: column;
+}
+
+@media screen and (max-width: 767px) {
+  .header__nav-container {
+    padding-top: 13px;
+    padding-right: 13px;
+  }
+}

@@ -1,0 +1,25 @@
+.form__input {
+  margin: 5px 0;
+  padding: 20px 0;
+  border: none;
+  border-bottom: 2px solid rgba(0, 0, 0, 1);
+  display: block;
+  width: 100%;
+  font-family: 'Inter', Helvetica, Arial, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+  transition: color .2s ease, border-color .2s ease;
+}
+
+.form__input:disabled {
+  background-color: unset;
+}
+
+@media screen and (max-width: 768px) {
+  .form__input {
+    font-size: 14px;
+    line-height: 1.42;
+  }
+}

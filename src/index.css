@@ -3,3 +3,90 @@
 @import url(./vendor/fonts/inter.css);
 
 @import url(./blocks/root/root.css);
+
+@import url(./blocks/header/header.css);
+
+@import url(./blocks/header/__menu-container/header__menu-container.css);
+
+@import url(./blocks/header/__logo-container/header__logo-container.css);
+@import url(./blocks/header/__nav-container/header__nav-container.css);
+
+@import url(./blocks/header/__logo-small/header__logo-small.css);
+
+@import url(./blocks/header/__menu-container/header__menu-container.css);
+@import url(./blocks/header/__menu/header__menu.css);
+@import url(./blocks/header/__menu-button/header__menu-button.css);
+@import url(./blocks/header/__menu-button/_active/header__menu-button_active.css);
+@import url(./blocks/header/__menu-list/header__menu-list.css);
+@import url(./blocks/header/__menu-list/_opened/header__menu-list_opened.css);
+
+@import url(./blocks/header/__menu-item/header__menu-item.css);
+
+@import url(./blocks/header/__menu-link/header__menu-link.css);
+
+@import url(./blocks/header/__title/header__title.css);
+@import url(./blocks/header/__logo-main/header__logo-main.css);
+
+@import url(./blocks/main/main.css);
+
+@import url(./blocks/main/__player-container/main__player-container.css);
+
+@import url(./blocks/player/player.css);
+@import url(./blocks/player/__controls/player__controls.css);
+@import url(./blocks/player/__column/player__column.css);
+@import url(./blocks/player/__row/player__row.css);
+@import url(./blocks/player/__song-title/player__song-title.css);
+@import url(./blocks/player/__timer/player__timer.css);
+@import url(./blocks/player/__button-toggle-music/player__button-toggle-music.css);
+@import url(./blocks/player/__button-toggle-music/_play/player__button-toggle-music_play.css);
+@import url(./blocks/player/__button-toggle-music/_pause/player__button-toggle-music_pause.css);
+@import url(./blocks/player/__button-toggle-list/player__button-toggle-list.css);
+@import url(./blocks/player/__button-toggle-list/_opened/player__button-toggle-list_opened.css);
+@import url(./blocks/player/__button-toggle-list/_closed/player__button-toggle-list_closed.css);
+@import url(./blocks/player/__progress-bar/player__progress-bar.css);
+@import url(./blocks/player/__progress-bar-container/player__progress-bar-container.css);
+@import url(./blocks/player/__progress-bar-line-container/player__progress-bar-line-container.css);
+@import url(./blocks/player/__progress-bar-line/player__progress-bar-line.css);
+@import url(./blocks/player/__song-cover/player__song-cover.css);
+@import url(./blocks/player/__releases/player__releases.css);
+@import url(./blocks/player/__releases/_opened/player__releases_opened.css);
+@import url(./blocks/player/__link-play-video/player__link-play-video.css);
+@import url(./blocks/player/__link-play-video/_visible/player__link-play-video_visible.css);
+@import url(./blocks/player/__link-play-video/_hidden/player__link-play_hidden.css);
+@import url(./blocks/player/__button-toggle-text/player__button-toggle-text.css);
+@import url(./blocks/player/__button-toggle-text/_visible/player__button-toggle-text_visible.css);
+
+@import url(./blocks/player/__playlist/player__playlist.css);
+@import url(./blocks/player/__playlist-title/player__playlist-title.css);
+@import url(./blocks/player/__playlist-item/player__playlist-item.css);
+@import url(./blocks/player/__text-title/player__text-title.css);
+@import url(./blocks/player/__song-text/player__song-text.css);
+
+@import url(./blocks/main/__about-container/main__about-container.css);
+@import url(./blocks/title/title.css);
+@import url(./blocks/main/__section/main__section.css);
+@import url(./blocks/article/__title/article__title.css);
+@import url(./blocks/article/__text/article__text.css);
+@import url(./blocks/article/__list/article__list.css);
+@import url(./blocks/article/__list-item/article__list-item.css);
+@import url(./blocks/paragraph/paragraph.css);
+@import url(./blocks/main/__form-container/main__form-container.css);
+@import url(./blocks/forms/__title/forms__title.css);
+@import url(./blocks/forms/__paragraph/forms__paragraph.css);
+
+@import url(./blocks/form/form.css);
+@import url(./blocks/form/__fieldset/form__fieldset.css);
+@import url(./blocks/form/__input/form__input.css);
+@import url(./blocks/form/__checkbox-label/form__checkbox-label.css);
+@import url(./blocks/form/__link/form__link.css);
+@import url(./blocks/form/__checkbox-mark/form__checkbox-mark.css);
+@import url(./blocks/form/__checkbox-mark/_checked/form__checkbox-mark_checked.css);
+@import url(./blocks/form/__checkbox-input/form__checkbox-input.css);
+@import url(./blocks/form/__input/_error/form__input_error.css);
+@import url(./blocks/form/__input-error/form__input-error.css);
+@import url(./blocks/form/__input-error/_active/form__input-error_active.css);
+@import url(./blocks/form/__checkbox-label/form__checkbox-label.css);
+@import url(./blocks/form/__submit-button.css/form__submit-button.css);
+@import url(./blocks/footer/footer.css);
+@import url(./blocks/footer/__paragraph/footer__paragraph.css);
+@import url(./blocks/footer/__link/footer__link.css);

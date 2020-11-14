@@ -1,7 +1,12 @@
 .root {
-  font-family: 'Inter', Arial, sans-serif;
+  font-family: 'Inter', Helvetica, Arial, sans-serif;
   width: 100%;
   min-width: 300px;
   margin: 0 auto;
   position: relative;
+  background-image: url(../../images/background/background.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
 }
