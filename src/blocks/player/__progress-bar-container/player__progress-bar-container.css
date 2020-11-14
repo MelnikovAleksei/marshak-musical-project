@@ -1,3 +1,21 @@
 .player__progress-bar-container {
-  width: 600px;
+  width: 690px;
+}
+
+@media screen and (max-width: 1100px) {
+  .player__progress-bar-container {
+    width: 600px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .player__progress-bar-container {
+    width: 400px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .player__progress-bar-container {
+    width: 250px;
+  }
 }

@@ -1,7 +1,8 @@
 .player__playlist {
   margin: 0;
-  padding: 6px 0 17px 60px;
+  padding: 0;
   white-space: pre-line;
   overflow-y: scroll;
   height: 81px;
+  list-style: none;
 }

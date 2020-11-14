@@ -1,0 +1,6 @@
+.player__column {
+  display: flex;
+  flex-direction: column;
+  max-width: 1150px;
+  padding: 0 15px;
+}

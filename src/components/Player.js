@@ -1,6 +1,5 @@
 import React from 'react';
-import PlayBtn from '../images/player/play.svg';
-import PauseBtn from '../images/player/pause.svg';
+import PlayVideoButton from '../images/player/play_video.svg';
 import songsData from '../utils/songsData';
 
 function Player() {
@@ -103,40 +102,96 @@ function Player() {
       />
       <div className="player__controls">
         <button
-          className="player__button-toggle-music-play"
+          className={isMusicPlay ?
+            "player__button-toggle-music player__button-toggle-music_play"
+          :
+            "player__button-toggle-music player__button-toggle-music_pause"
+          }
           data-icon="P"
           aria-label="включить или выключить музыку"
           onClick={handlePlayPauseMusic}
         >
-          {isMusicPlay ? "||" : "|>"}
         </button>
-        <p className="player__song-title">{currentSong.name} - {currentSong.authors}</p>
-        <div className="player__progress-bar">
-          <div className="player__progress-bar-container">
+        <div className="player__column">
+          <div className="player__row">
+            <p className="player__song-title">{currentSong.name} - {currentSong.authors}</p>
             <div
-              className="player__progress-bar-line-container"
-              style={{
-                width: `100%`
-              }}
+              className="player__timer"
             >
+              <span
+                aria-label="timer"
+              >
+                {mediaTime}
+              </span>
+            </div>
+          </div>
+          <div className="player__progress-bar">
+            <div className="player__progress-bar-container">
               <div
-                className="player__progress-bar-line"
+                className="player__progress-bar-line-container"
                 style={{
-                  width: `${progressLineWidth}%`
+                  width: `100%`
                 }}
               >
+                <div
+                  className="player__progress-bar-line"
+                  style={{
+                    width: `${progressLineWidth}%`
+                  }}
+                >
+                </div>
               </div>
             </div>
           </div>
-        </div>
-        <div
-          className="player__timer"
-        >
-          <span
-            aria-label="timer"
+          <div
+            className={isOpenList ? "player__releases player__releases_opened" : "player__releases"}
           >
-            {mediaTime}
-          </span>
+            {isDisplayText ?
+            (
+            <>
+              <h3
+                className="player__text-title"
+              >
+                Текст песни:
+              </h3>
+              <p
+                className="player__song-text"
+              >
+                {currentSong.text}
+              </p>
+            </>
+            )
+            :
+            (
+            <>
+            <h3
+              className="player__playlist-title"
+            >
+              {songsData.length > 1 ? 'Релизы' : ''}
+            </h3>
+            <ul
+              className="player__playlist"
+            >
+              {songsData.length > 1 ?
+                songsData.map((song, index) =>
+                  <li
+                    data-index={index}
+                    key={song.id}
+                    className="player__playlist-item"
+                    lang={song.lang}
+                    onClick={handlePlaylistItemClick}
+                  >
+                    {`${song.name} — ${song.authors}`}
+                  </li>
+                )
+              :
+                'Пока что у нас только 1 релиз.'
+              }
+            </ul>
+            </>
+            )}
+          </div>
+
         </div>
         <a
           className={currentSong.videoUrl ?
@@ -147,9 +202,7 @@ function Player() {
           href={currentSong.videoUrl}
           target="_blank"
           rel="noreferrer"
-        >
-          {'> Клип'}
-        </a>
+        >&#9658; Клип</a>
         <button
           className={isOpenList ?
             "player__button-toggle-text player__button-toggle-text_visible"
@@ -161,59 +214,14 @@ function Player() {
           {isDisplayText ? 'Релизы' : 'Текст песни'}
         </button>
         <button
-          className="player__button-toggle-list"
+          className={isOpenList ?
+          "player__button-toggle-list player__button-toggle-list_opened"
+          :
+          "player__button-toggle-list player__button-toggle-list_closed"
+          }
           onClick={() => { handleButtonToggleList() }}
         >
-          {isOpenList ? 'x' : '^'}
         </button>
-      </div>
-      <div
-        className={isOpenList ? "player__releases player__releases_opened" : "player__releases"}
-      >
-        {isDisplayText ?
-        (
-        <>
-          <h3
-            className="player__text-title"
-          >
-            Текст песни:
-          </h3>
-          <p
-            className="player__song-text"
-          >
-            {currentSong.text}
-          </p>
-        </>
-        )
-        :
-        (
-        <>
-        <h3
-          className="player__playlist-title"
-        >
-          {songsData.length > 1 ? 'Релизы' : ''}
-        </h3>
-        <ul
-          className="player__playlist"
-        >
-          {songsData.length > 1 ?
-            songsData.map((song, index) =>
-              <li
-                data-index={index}
-                key={song.id}
-                className="player__playlist-item"
-                lang={song.lang}
-                onClick={handlePlaylistItemClick}
-              >
-                {`${song.name} — ${song.authors}`}
-              </li>
-            )
-          :
-            'Пока что у нас только 1 релиз.'
-          }
-        </ul>
-        </>
-        )}
       </div>
 
     </div>

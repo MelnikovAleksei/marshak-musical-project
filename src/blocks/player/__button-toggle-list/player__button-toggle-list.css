@@ -1,0 +1,14 @@
+.player__button-toggle-list {
+  position: relative;
+  top: 8px;
+  left: 0;
+  width: 24px;
+  height: 24px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-color: #000000;
+  border: none;
+  border-radius: 12px;
+  margin-left: 15px;
+}

@@ -29,9 +29,20 @@
 
 @import url(./blocks/main/main.css);
 
+@import url(./blocks/main/__player-container/main__player-container.css);
+
 @import url(./blocks/player/player.css);
 @import url(./blocks/player/__controls/player__controls.css);
-@import url(./blocks/player/__button-toggle-music-play/player__button-toggle-music-play.css);
+@import url(./blocks/player/__column/player__column.css);
+@import url(./blocks/player/__row/player__row.css);
+@import url(./blocks/player/__song-title/player__song-title.css);
+@import url(./blocks/player/__timer/player__timer.css);
+@import url(./blocks/player/__button-toggle-music/player__button-toggle-music.css);
+@import url(./blocks/player/__button-toggle-music/_play/player__button-toggle-music_play.css);
+@import url(./blocks/player/__button-toggle-music/_pause/player__button-toggle-music_pause.css);
+@import url(./blocks/player/__button-toggle-list/player__button-toggle-list.css);
+@import url(./blocks/player/__button-toggle-list/_opened/player__button-toggle-list_opened.css);
+@import url(./blocks/player/__button-toggle-list/_closed/player__button-toggle-list_closed.css);
 @import url(./blocks/player/__progress-bar/player__progress-bar.css);
 @import url(./blocks/player/__progress-bar-container/player__progress-bar-container.css);
 @import url(./blocks/player/__progress-bar-line-container/player__progress-bar-line-container.css);
@@ -46,6 +57,9 @@
 @import url(./blocks/player/__button-toggle-text/_visible/player__button-toggle-text_visible.css);
 
 @import url(./blocks/player/__playlist/player__playlist.css);
+@import url(./blocks/player/__playlist-title/player__playlist-title.css);
+@import url(./blocks/player/__playlist-item/player__playlist-item.css);
+@import url(./blocks/player/__text-title/player__text-title.css);
 @import url(./blocks/player/__song-text/player__song-text.css);
 
 @import url(./blocks/main/__about-container/main__about-container.css);
